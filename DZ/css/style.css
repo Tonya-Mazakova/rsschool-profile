@@ -1,0 +1,396 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body,div, span, ul,li, h1,h2,h3, p, img{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+figure {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+.clear_fix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("../fonts/bebas.woff") format("woff"),
+    url("../fonts/bebas.woff2") format("woff"),
+    url("../fonts/bebas.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: url("../fonts/calibri.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Calibri Light";
+    src: url("../fonts/calibril.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Calibri LightItalic";
+    src: url("../fonts/calibrili.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "StMarie Thin";
+    src: url("../fonts/st-marie.ttf") format("truetype"),
+    url("../fonts/st-marie.woff") format("woff"),
+    url("../fonts/st-marie.woff2") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body, html {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    /*min-height: 100%;*/
+    margin: 0 auto;
+}
+.main{
+    padding-bottom: 65px;
+    min-height: 100%;
+}
+/***nav***/
+.header {
+    background-color: #fff;
+    height: 127px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-img {
+    float: left;
+    height: 127px;
+    padding-top: 5px;
+    margin: 0 51px 0 17px;
+}
+
+h1 {
+    float: left;
+    margin-top: 11px;
+    letter-spacing: 1px;
+    font-family: "Calibri";
+    font-size: 3.7rem;
+    text-align: center;
+    color: #fb9c06;
+}
+
+.h1-text {
+    font-family: "Bebas";
+    color: #6e6d6b;
+}
+
+nav {
+    float: right;
+    height: inherit;
+}
+
+.nav-menu {
+    font-family: "Calibri";
+    font-size: 2.2rem;
+    height: inherit;
+    margin-right: 4px;
+}
+
+.nav-menu-item {
+    height: inherit;
+    display: inline-block;
+    cursor: pointer;
+    padding: 26px 15px;
+    margin-right: 50px;
+}
+
+.nav-menu-item-link {
+    color: #9e9b9b;
+}
+
+.nav-menu-item:last-child {
+    margin-right: 0;
+    padding-right: 1px;
+}
+
+.nav-menu-item:hover .nav-menu-item-link {
+    color: #fb9c06;
+}
+
+.nav-menu-item-link {
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.nav-menu-item:before {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 10px;
+    background: url("../img/sprite.png");
+    width: 54px;
+    height: 47px;
+    margin: 0 auto;
+}
+
+.nav-menu-item:nth-child(2):before {
+    width: 23px;
+    height: 45px;
+    background-position: -60px -2px;
+}
+
+.nav-menu-item:nth-child(3):before {
+    width: 43px;
+    height: 44px;
+    background-position: -88px -2px;
+}
+
+.nav-menu-item:nth-child(4):before {
+    width: 41px;
+    height: 40px;
+    background-position: -137px -2px;
+}
+
+.nav-menu-item:nth-child(5):before {
+    width: 50px;
+    height: 34px;
+    background-position: -184px -2px;
+}
+
+.nav-menu-item:hover:before {
+    background-position: 0 -55px;
+}
+
+.nav-menu-item:nth-child(2):hover:before {
+    background-position: -60px -57px;
+}
+
+.nav-menu-item:nth-child(3):hover:before {
+    background-position: -88px -57px;
+}
+
+.nav-menu-item:nth-child(4):hover:before {
+    background-position: -137px -57px;
+}
+
+.nav-menu-item:nth-child(5):hover:before {
+    background-position: -184px -57px;
+}
+
+/***slide***/
+.slide {
+    font-family: "Bebas";
+    background-image: url("../img/big-orange-bg.png");
+    background-size: cover;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    height: 400px;
+    margin: 127px auto 0;
+    border-bottom: 4px solid #fb9c06;
+    border-top: 4px solid #fcba50;
+}
+
+.slide-content {
+    width: 394px;
+    text-align: center;
+    margin: 130px 0 0 15px;
+}
+
+.slide-h2-question-1 {
+    color: #fb9c06;
+    margin-bottom: 24px;
+    padding: 9px 15px;
+    background-color: #000;
+    opacity: .69;
+}
+
+.slide-h2-question-2 {
+    padding: 14px 13px;
+    color: #6e6d6b;
+    background-color: #ffaf12;
+    opacity: .70;
+}
+
+/***info***/
+.info {
+    margin-top: 23px;
+    box-shadow: 0 6px 5px -4px rgba(128, 128, 128, .1);
+}
+
+.info-content {
+    font-family: "Calibri";
+    font-size: 1.5rem;
+    line-height: 24px;
+    color: #000;
+    float: left;
+    width: 300px;
+    padding: 15px 21px;
+    overflow: hidden;
+}
+
+.info-content-p1 {
+    overflow: hidden;
+    height: 145px;
+}
+
+.info-content-p2 {
+    font-family: "Calibri LightItalic";
+    text-align: right;
+}
+
+.info-content-p2 a {
+    color: #ffac00;
+}
+
+.info-content-p2 a:hover {
+    opacity: .6;
+}
+
+/***team***/
+.team-h3 {
+    font-family: "StMarie Thin";
+    font-size: 4rem;
+    color: #ff9c00;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team-content {
+    float: left;
+    font-family: "Calibri Light";
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 37px 130px 0 0;
+}
+
+.team-content:nth-child(3n+1){
+    margin-right: 0;
+}
+.team-content-name {
+    color: #6e6d6b;
+}
+
+.team-content-name1 {
+    color: #fb9c06;
+}
+
+.team-content-img {
+    margin-top: 28px;
+    border-radius: 155px;
+    border: 9px solid #ffb540;
+}
+
+.team-content-description {
+    margin: 13px auto;
+    text-align: left;
+    width: 255px;
+    height: 90px;
+    font-size: 1.5rem;
+    color: #333333;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/***form***/
+.contacts-form {
+    margin-bottom: 50px;
+}
+
+.contacts {
+    margin-top: 67px;
+    min-height: 100%;
+}
+
+.contacts-label {
+    font-family: "StMarie Thin";
+    font-size: 2.4rem;
+    color: #fb9c06;
+    width: 130px;
+    display: inline-block;
+    float: left;
+}
+
+.contacts-field {
+    font-family: "Calibri";
+    font-size: 2.2rem;
+    color: #4b4f4f;
+    width : 1070px;
+    height: 32px;
+    margin-bottom: 37px;
+    background-color: #f8f7f6;
+    padding-left: 5px;
+}
+
+.contacts-text {
+    padding-top: 3px;
+    height: 90px;
+    resize: none;
+}
+
+.contacts-button {
+    font-family: "StMarie Thin";
+    font-size: 3rem;
+    height: 49px;
+    width: 175px;
+    background-color: #fb9c06;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 33px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #cc830f;
+    float: right;
+}
+
+.contacts-button:hover {
+    opacity: .9;
+}
+
+/***footer***/
+fieldset{
+    border: none;
+}
+.footer {
+    margin-top: -73px;
+    height: 73px;
+    background-color: #fb9c06;
+    box-shadow: inset 0 -4px 2px rgba(204, 131, 15, 1);
+}
+
+.footer-content {
+    font-family: "StMarie Thin";
+    text-align: center;
+    color: #fff;
+    font-size: 3.3rem;
+    padding-top: 17px;
+}
